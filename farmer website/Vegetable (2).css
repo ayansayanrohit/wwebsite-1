@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
 
 *,
@@ -41,17 +40,15 @@ ul {
 
 [role=food-menu] {
   width: 100%;
-  color: #a19f7a;
+  color: #666;
 }
 [role=food-menu] .categories {
   display: flex;
   padding: 2rem;
-  color: rgba(213, 240, 174, 0.7);
+  color: rgba(39, 39, 39, 0.7);
   font-size: 1.2em;
-  background-color: #821010;
+  background-color: #dfdfdf;
   box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
-  gap:20px;
-  transition: 0.3s;
 }
 [role=food-menu] .categories::before {
   content: "categories:";
@@ -87,7 +84,7 @@ ul {
 [role=food-menu] .categories[data-selected=all] [data-category=all]::before {
   width: 100%;
 }
-[role=food-menu] .categories[data-selected=all] + .menu .item[data-category=all] {
+[role=food-menu] .categories[data-selected=all] + .menu .item[data-category~=all] {
   display: flex;
 }
 [role=food-menu] .categories[data-selected=western] [data-category=western] {
